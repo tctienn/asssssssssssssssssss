@@ -184,33 +184,7 @@ export default [
     to: '/charts',
     icon: 'cil-chart-pie',
   },
-  {
-    component: 'CNavGroup',
-    name: 'Icons',
-    to: '/icons',
-    icon: 'cil-star',
-    items: [
-      {
-        component: 'CNavItem',
-        name: 'CoreUI Icons',
-        to: '/icons/coreui-icons',
-        badge: {
-          color: 'info',
-          text: 'NEW',
-        },
-      },
-      {
-        component: 'CNavItem',
-        name: 'Brands',
-        to: '/icons/brands',
-      },
-      {
-        component: 'CNavItem',
-        name: 'Flags',
-        to: '/icons/flags',
-      },
-    ],
-  },
+
   {
     component: 'CNavGroup',
     name: 'Notifications',

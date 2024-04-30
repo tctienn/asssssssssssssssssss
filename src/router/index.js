@@ -202,33 +202,7 @@ const routes = [
         name: 'Charts',
         component: () => import('@/views/charts/Charts.vue'),
       },
-      {
-        path: '/icons',
-        name: 'Icons',
-        component: {
-          render() {
-            return h(resolveComponent('router-view'))
-          },
-        },
-        redirect: '/icons/coreui-icons',
-        children: [
-          {
-            path: '/icons/coreui-icons',
-            name: 'CoreUI Icons',
-            component: () => import('@/views/icons/CoreUIIcons.vue'),
-          },
-          {
-            path: '/icons/brands',
-            name: 'Brands',
-            component: () => import('@/views/icons/Brands.vue'),
-          },
-          {
-            path: '/icons/flags',
-            name: 'Flags',
-            component: () => import('@/views/icons/Flags.vue'),
-          },
-        ],
-      },
+
       {
         path: '/notifications',
         name: 'Notifications',
