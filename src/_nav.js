@@ -11,47 +11,6 @@ export default [
   },
   {
     component: 'CNavTitle',
-    name: 'DỮ LIỆU BÁN HÀNG',
-  },
-  {
-    component: 'CNavGroup',
-    name: 'Product',
-    to: '/product',
-    icon: 'cil-puzzle',
-    items: [
-      {
-        component: 'CNavItem',
-        name: 'Danh sách sản phẩm',
-        to: '/product/list',
-      }, {
-        component: 'CNavItem',
-        name: 'Tạo sản phẩm',
-        to: '/product/add',
-      },
-      {
-        component: 'CNavItem',
-        name: 'Danh mục (catergory)',
-        to: '/product/catergory',
-      },
-      {
-        component: 'CNavItem',
-        name: 'Nhãn (tag)',
-        to: '/product/tag',
-      },
-      {
-        component: 'CNavItem',
-        name: 'Thương hiệu (brand)',
-        to: '/product/brand',
-      },
-      {
-        component: 'CNavItem',
-        name: 'Kích cỡ (size)',
-        to: '/product/size',
-      },
-    ]
-  },
-  {
-    component: 'CNavTitle',
     name: 'Theme',
   },
   {
@@ -225,7 +184,33 @@ export default [
     to: '/charts',
     icon: 'cil-chart-pie',
   },
-
+  {
+    component: 'CNavGroup',
+    name: 'Icons',
+    to: '/icons',
+    icon: 'cil-star',
+    items: [
+      {
+        component: 'CNavItem',
+        name: 'CoreUI Icons',
+        to: '/icons/coreui-icons',
+        badge: {
+          color: 'info',
+          text: 'NEW',
+        },
+      },
+      {
+        component: 'CNavItem',
+        name: 'Brands',
+        to: '/icons/brands',
+      },
+      {
+        component: 'CNavItem',
+        name: 'Flags',
+        to: '/icons/flags',
+      },
+    ],
+  },
   {
     component: 'CNavGroup',
     name: 'Notifications',
